@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: chatprivate
+    runtime: python
+    rootDir: py
+    buildCommand: pip install -r ../requirements.txt
+    startCommand: gunicorn app:app
